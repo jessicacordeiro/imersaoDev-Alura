@@ -1,0 +1,165 @@
+body{
+
+    /* Configuração geral da página */
+    font-family: 'Courier Prime', monospace;
+
+    /* Imagem de fundo */
+    background: url("https://i.imgur.com/PQjycQi.png") no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+/* Div que agrupa todos os elementos */
+
+.container {
+    position: relative;
+    margin: 100px auto;
+    width: 315px;
+    height: auto;
+    background: #EDA5F4;
+    border: 5px solid #E8E8E8 ;
+    box-shadow: 4px 4px 4px gray;
+}
+
+/* Estilização do header da calculadora no formato do windows 97 */
+
+.top {
+    position: relative;
+    width: 97%;
+    height: 30px;
+    padding: 5px;
+    background: #941E8C;
+    display: flex;
+    direction:rtl;
+}
+
+.btn-windows {
+    font-weight: bold;
+    margin-right: 6px;
+    background: #CDCDCD;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-right: 25px;
+    margin-top: 4px;
+    color: #ffff;
+}
+
+.body {
+    position: relative;
+    width: 94%;
+    height: auto;
+    margin-left: -1px;
+    padding: 8px;
+    margin-top: 5px;
+    background: #EDA5F4;
+    border: 2px  #737373;
+}
+
+/* Estilização do visor da calculadora */
+
+#result {
+    width: 242px;
+    height: 50px;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    padding: 20px;
+    background: #ffff;
+    color: #941E8C;
+    font-family: 'Courier Prime', monospace;
+    font-size: 50px;
+    text-align: right;
+}
+
+/* Estilização dos botões da calculadora */
+
+.btn {
+    padding: -4px;
+    margin-bottom: 10px;
+    width: 52px;
+    height: 52px;
+    background-color: #941E8C;
+    color: #ffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.zero {
+    width: 110px;
+}
+
+.igual {
+    margin-left: 1px;
+    height: 118px;
+}
+
+/* Aplicação efeito hover botão converter */
+
+.btn:hover {
+    background: #59065c;
+}
+
+/*Responsividade do site */
+
+@media (max-width: 400px){
+
+    body{
+        background: url(https://i.imgur.com/r460azo.png) no-repeat center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+
+    }
+
+    .container {
+        margin-top: 100px;
+        width: 250px;
+        margin-left: 20px;
+        
+    }
+
+    h1 {
+        font-size: 13px;
+        margin-right: 15px;
+    }
+
+    .body{
+        width: 94%;
+        height: auto;
+    }
+
+    #result{
+        width: 180px;
+        margin-left: 8px;
+    }
+
+    .btn {
+        margin-top: 0px;
+        padding: 1px;
+        width: 2.5rem;
+        height: 3rem;
+        border: none;
+        font-size: 20px;
+        box-shadow: 4px 4px 4px gray;
+    }
+
+    .zero {
+        width: 5.0rem;
+    }
+    
+    .igual {
+        height: 6.9rem;
+    }
+}
+
