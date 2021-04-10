@@ -1,0 +1,174 @@
+/*ESTILIZAÇÃO DO JOGO*/
+
+body {
+    /* Configuração geral da página */
+    padding-bottom: 60%;
+    font-family: 'Roboto Mono', monospace;
+    /* Imagem de fundo */
+    background: url("https://i.imgur.com/oKn0Ibx.png") no-repeat center center fixed;
+    background-color:#FFD456;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Div que agrupa todos os elementos */
+
+.container {
+    background-color: #262E92;
+    position: absolute;
+    text-align: center;
+    min-width: 35%;
+    min-height: 20%;
+    left: 30%;
+    top: 15%;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 4px 4px 4px black;
+}
+
+/* Título - Container Principal */
+
+#titulo {
+    color: White;
+    width: 100%;
+    height: 100px;
+    margin-top: 90px; 
+    margin-bottom: -50px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: -60px;
+}
+
+.page-logo {
+
+    margin-top: -15px;
+    width: 200px;
+}
+
+/* Posicionamento das uls e lis*/
+
+#jogador, #computador {
+    position: relative;
+    flex-grow: 1;
+    width: 300px;
+    padding: 20px;
+    margin-top: -30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+ul#player-escolha, ul#computador-escolha {
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+}
+
+ul#player-escolha li, ul#computador-escolha li{
+    display: inline;
+    margin-left: 2px;
+}
+
+ul#player-escolha li a, ul#computador-escolha a {
+    opacity: .2;
+}
+
+ul#player-escolha li a:hover, ul#computador-escolha li a.selecionado {
+    opacity: 1;
+}
+
+/*Subtítulos - Computador e Player - 1 */
+
+h2 {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+/* Ajuste de posição das divs de conversão */
+
+#computador-escolha {
+    margin-top: -60px;
+    
+}
+
+/* Estilização input valor e resultado */
+
+#resultado {
+    text-align: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Aplicação de responsividade */
+
+@media (max-width: 800px) {
+    body {
+        padding-bottom: 60%;
+    }
+    .container {
+        width: 80%;
+        left: 10%;
+        top: 15%;
+        box-shadow: 4px 4px 4px black;
+    }
+
+    #jogador, #computador {
+        width: 80%;
+        height: 50px;
+        margin-left: 4%;
+        margin-top: 5%;
+    }
+
+    img{
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    #resultado {
+        text-align: center;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 180px;
+        margin-bottom: 50px;
+    }
+
+    #titulo {
+        height: 50px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 90px;
+    }
+  
+    h3 {
+        font-size: 20px;
+        margin-top: 120px;
+    }  
+    .page-logo {
+        max-width: 80px;
+        max-height: 40px;
+    }
+}
+
+/* logomarca da Alura */
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+}

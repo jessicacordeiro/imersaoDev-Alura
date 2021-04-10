@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 03</title>
+
+    <!--Links de estilização da página-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="titulo">
+            <h1>JO-KEN-PÔ</h1>
+            <div>
+            <img class="page-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" 
+            alt="">
+            </div>
+        </div>
+
+        <!--Escolha do usuário-->
+        <div id="jogador">
+            <h2 id="jogador-nome"> Player 1: <span  id="jogador-pontos">0</span></h2>
+
+            <ul id="player-escolha">
+                <li><a id="jogador-escolha-1" onclick="jogar(1)"><img src="https://i.imgur.com/QOQubIR.png" alt="emoji-pedra" width="90px" height="90px"></a></li>
+                <li><a id="jogador-escolha-2" onclick="jogar(2)"><img src="https://i.imgur.com/DaNCmRO.png" alt="emoji-papel" width="90px" height="90px"></a></li>
+                <li><a id="jogador-escolha-3" onclick="jogar(3)"><img src="https://i.imgur.com/4fbaIpj.png" alt="emoji-tesoura" width="90px" height="90px"></a></li>
+            </ul>    
+        </div>
+
+        <!--Escolha do Computador-->
+        <div id="computador">
+            <h3>Computador: <span id="computador-pontos">0</span></h3>
+
+            <ul id="computador-escolha">
+                <li><a id="computador-escolha-1"><img src="https://i.imgur.com/QOQubIR.png" alt="emoji-pedra" width="90px" height="90px"></a></li>
+                <li><a id="computador-escolha-2"><img src="https://i.imgur.com/DaNCmRO.png" alt="emoji-papel" width="90px" height="90px"></a></li>
+                <li><a id="computador-escolha-3"><img src="https://i.imgur.com/4fbaIpj.png" alt="emoji-tesoura" width="90px" height="90px"></a></li>
+            </ul>
+        </div>
+
+        <!--Impressão do resultado-->
+        <div id="resultado">&nbsp;</div>
+    </div>
+
+    <!--Logomarca - Alura-->
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+<!--JS-->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
