@@ -1,0 +1,157 @@
+body {
+    /* Configuração geral da página */
+    margin: 56%;
+    padding: 30px;
+    font-family: 'Space Mono', monospace;
+    /* Imagem de fundo */
+    background: url("../img/gif-background.gif") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Div que agrupa todos os elementos */
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    background-color: #000000;
+    position: absolute;
+    text-align: center;
+    min-width: 25%;
+    min-height: 70%;
+    padding-bottom: 100px;
+    left: 7%;
+    right: 8%;
+    top: 15%;
+    border-radius: 5%;
+    color: #fff;
+}
+
+
+/*PAGE TÍTULO*/
+img{
+    margin-top: 70px;
+    width: 600px;
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*EFEITO NEON*/
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+img {
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+#page-titulo{
+    --cor-neon: #FF00EE;
+}
+
+/*SUBTITULO DA PAGE*/
+.subtitulo {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 3em;
+    font-weight: 400 !important;
+}
+
+.subtitulo span {
+    background: #FF00EE;
+    padding: 1px 2px 1px 2px;
+}
+
+/*BODY*/
+h3 {
+    color: #fff;
+    margin-top: 2em;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.8rem;
+    word-break: keep-all;
+}
+
+.gameImage {
+    width: 250px;
+    height: 250px;
+    border: none;
+}
+
+.games-item {
+    color: #fff;
+    text-shadow: #FF00EE;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 10px;
+}
+  
+.games-item:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    
+    .container {
+        width: 98%;
+        left: 1%;
+        border-radius: 40px;
+        top: 5%;
+    }
+
+    img {
+        margin-top: 50px;
+        width: 300px;
+        height: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .subtitulo {
+        margin-top: 5px;
+        font-size: 1.8em;
+        font-weight: 400 !important;
+    }
+
+    h3 {
+        height: 90px;
+        margin-top: 20px;
+        font-size: 12px;
+        margin-bottom: -70px;
+    }
+
+    h2 {
+        font-size: small;
+        margin-left: 3px;
+    }
+
+    .gameImage {
+        width: 90px;
+        height: 90px;
+        border: none;
+    }
+
+    .alura-logo {
+        width: 40px;
+        right:10px;
+    }
+}
+
+/* logomarca da Alura */
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: -80px;
+    right:10px;
+}
