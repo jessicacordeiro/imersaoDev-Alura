@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 01</title>
+    <!--Links de estilização da página-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--Título-->
+    <div class="container">
+        <div id="titulo">
+            <h1>Conversor de temperatura</h1><br>
+            <!--Subtítulo-->
+            <div>
+            <h2>Descubra a temperatura em Fahrenheit °F</h2>
+            <img class="page-logo" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="">
+            </div>
+        </div>
+
+        <!--Input para inserir a temperatura em Celsius-->
+        <div class="usuario">
+            <p>Digite a sua temperatura em °C</p>
+            <input type="text" placeholder="0" name="temperatura" id="temperatura">
+
+            <!--Botão de conversão-->
+            <input type="button" class="btnconvert" onclick="convert()" value="CONVERTER">
+        </div>
+
+        
+        <!--Impressão do Resultado-->
+        <div class="resp-conversao">
+            <p>Sua temperatura atual em °F é:</p>
+            <input type="text" placeholder="00 °F" disabled id="result"><br>
+        </div>
+    </div>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+<!--JS-->
+<script src="assets/js/function.js"></script>
+
+</body>
+</html>
