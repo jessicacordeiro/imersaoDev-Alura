@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 3</title>
+
+    <!--Links de estilização da página-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="titulo">
+            <img class="page-titulo" src="https://i.imgur.com/jEP4UgV.png" alt="texto">
+            <h2 class="subtitulo">Imersão<span>dev_</span></h2>
+        </div>
+          
+        <div>
+            <h3>Adivinhe qual o número que estou pensando<br> de 0 a 30. Você tem 5 tentativas...</h3>
+        </div>
+
+        <!--Input para inserir o chute-->
+        <div id="digiteChute">
+            <input type="text" id="chuteValor" placeholder="Digite um número">
+
+            <!--Botão de verificar-->
+            <input type="submit" id="botao" value="Entrar" onclick="compare()">
+            <!--Impressão do Resultado-->
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <!--JS-->
+    <script src="assets/js/script.js"></script> 
+    
+</body>
+</html>
