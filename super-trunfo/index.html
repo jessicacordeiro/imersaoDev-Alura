@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev - Aula 7, 8 e 9</title>
+
+    <!--Links de estilização da página-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 id="titulo">SUPER TRUNFO CATS</h1>
+            <h2 class="subtitulo">Imersão<span>dev_</span></h2>
+        </div>
+        <div>
+            <div id="quantidade-cartas"></div>
+            <div id="placar"></div>
+            <button onclick="sortearCarta()" id="btnSortear">SORTEIE AS CARTAS PARA INICIAR</button>
+        </div>
+
+        <form id="form">
+            <div>
+                <h4>Escolha o seu atributo</h4>
+                <!--<select id="atributo-selecionado">
+                    <option value="ataque">Ataque</option>
+                    <option value="defesa">Longividade</option>
+                    <option value="velocidade">Velocidade</option>
+                </select>-->
+            </div>  
+            <div class="wrapper">
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">JOGAR</button>
+            <div id="resultado"></div>
+            <button type="button" id="btnProximaRodada" onclick="proximaRodada()" disabled="true">Proxima
+                rodada</button>
+        </form>
+    </div>
+
+    
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
