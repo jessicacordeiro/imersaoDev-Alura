@@ -201,8 +201,8 @@ ol li {
     
 
     section {
-        margin-left: 15px;
-        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
         width: 300px;
         margin-top: 80px;
         margin-bottom: 150px;
