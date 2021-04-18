@@ -1,0 +1,249 @@
+html {
+    background: url(https://i.imgur.com/5pWCxjN.png) no-repeat center center fixed;
+     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: flex-end;
+    justify-items: end;
+
+    --color-headings: #941E8C;
+}
+
+html[data-theme='dark'] {
+    --bg: url(https://i.imgur.com/ijkHXXo.png);
+    --color-headings: #42043d;
+}
+
+body {
+    background-image: var(--bg);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    margin: 0.1em;
+    padding: 0.1em;
+
+    display: flex-end;
+    grid-template-columns: 100% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title switch"
+        "content content";
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: #941E8C;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-headings);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+  
+section {
+    -webkit-box-shadow: 5px 5px 50px 8px rgba(0,0,0,0.59); 
+    box-shadow: 5px 5px 50px 8px rgba(0,0,0,0.80);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 500px;
+    margin-bottom: 100px;
+    background-color: #FFAAEE;
+    padding: 15px;
+    border: 7px solid #941E8C;
+    border-radius: 25px;
+}
+  
+section h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: -5px;
+    color: #42043d;
+    text-shadow: 3px 3px 2px #fff;
+}
+  
+header {
+    background-image: url(https://i.imgur.com/thfHXr1.png);
+    margin-top: -16px;
+    /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size   */
+    background-size: cover;
+    height: 200px;
+    width: 530px;
+    margin-left: -15px;
+}
+  
+div {
+    padding: 15px;
+    /* propriedade visual: valor */
+}
+  
+#img-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(-50%);
+    border: 7px solid #941E8C;
+}
+
+#img-nome {
+    width: 410px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: none;
+}
+
+/*EFEITO NEON*/
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+#img-nome {
+    animation: neon 5s alternate infinite ease-in-out;
+}
+
+.page-titulo {
+    --cor-neon: #fff;
+    margin-top: -130px;
+}
+
+a {
+    color: #42043d;
+    text-decoration: none;
+}
+
+ol li {
+    color: #42043d;
+    list-style-position: inside;
+}
+
+#link1 {
+    margin-left: 210px;
+}
+
+#link1, #link2 {
+    padding: 0.5px;
+    width: 35px;
+    height: 35px;
+    border: 0px solid white;
+    border-radius: 100%;
+    margin-right: 10px;
+    box-shadow: 4px 6px 1px #941E8C;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        background-image: var(--bg);
+        width: 150%;
+        height: 100%;
+        margin: 0;
+    }
+    
+
+    section {
+        margin-left: 15px;
+        margin-right: 10px;
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 150px;
+        padding: 15px;
+    }
+
+    header {
+        background-image: url(https://i.imgur.com/thfHXr1.png);
+        margin-top: -16px;
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size   */
+        background-size: cover;
+        height: 200px;
+        width: 330px;
+        margin-left: -15px;
+    }
+
+    #img-nome {
+        width: 280px;
+        height: 30px;
+        margin-left: -5px;
+        margin-right: 10px;
+        margin-bottom: none;
+    }
+
+    section h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    ol li {
+        list-style-position: inside;
+        font-size: 16px;
+        margin-left: -30px;
+        margin-top: 5px;
+    }
+    
+
+    #link1 {
+        margin-top: 5px;
+        margin-left: 90px;
+    }
+}
